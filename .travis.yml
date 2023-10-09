@@ -5,8 +5,8 @@ services:
 before_install:
   - docker-compose up
 
-script:
-  - docker-compose exec web env CI=true
+# script:
+#   - docker-compose exec web env CI=true npm run test
 
 deploy:
   provider: elasticbeanstalk
